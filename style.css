@@ -87,6 +87,6 @@ input[type="checkbox"] {width: 25px; height: 25px; margin-right: 10px;}
 button {background: rgb(249, 240, 238); position: absolute; top: 33%; right: 10px; border: 1px solid rgb(243, 238, 227); width: 100px; height: 40px; border-radius: 20px; font-family: "Nunito", sans-serif; font-size: 25px; color: rgb(71, 70, 69);}
 button:hover {background: rgb(71 70 69); color: #fff;}
 
-#list {margin-top: 10px; font-size: 26px; line-height: 150%; height: 400px; overflow-y: auto; overflow-x: auto;}
+#list {margin-top: 20px; font-size: 26px; line-height: 150%; height: 400px; overflow-y: auto; overflow-x: auto;}
 	
-#list ul li {margin-top: 25px; display: flex; align-items: center;}	
+#list ul li {margin-top: 15px; display: flex; align-items: center;}	
