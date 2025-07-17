@@ -1,0 +1,85 @@
+@media only screen and (max-width: 1536px) {
+    .mid_boxes section {min-height: 0; width: 24%; }
+    .btm1_boxes section {min-height: 0; width: 24%; }
+}
+
+
+
+@media only screen and (max-width: 1536px) {
+    .nav_con > li > ul {display: none;}
+}
+
+
+@media only screen and (max-width: 1366px) {
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .main_logo {max-width: 160px;}
+
+    #nav_area {visibility: visible;}
+
+    .mid_info {width: 100%; max-width: none; text-align: center; padding: 0; margin: 0;}
+    .mid_info h2 {padding: 0; width: 100%; max-width: none; margin: 0; font-size: 34px;}
+    .mid_info p {padding: 0; margin: 25px auto 0; width: 100%; max-width: none;}
+    .mid_info a {margin: 25px auto 0;}
+
+
+    .mid_boxes {justify-content: center; flex-wrap: wrap;}
+    .mid_boxes section {min-height: 0; max-width: 400px;  margin: 15px; width: 44%; }
+    .mid_boxes .btm1_box_info {}
+    .mid_boxes section h2:before {display: block; position: static; margin: 0 0 7px;}
+    .mid_boxes section p {margin-top: 25px; padding: 0;}
+    .mid_boxes section a {display: block; margin: 25px auto 0;}
+
+    #main_area{margin:0;padding: 40px 25px; min-height: 0;}
+    .main_con{float:none!important; width:100%!important; top: 0; right:0; left:0; bottom:0; position: relative; min-height: 0; margin: 0; padding: 0; height: auto; display: block;}
+    main {margin: 0; width: 100%; text-align: left;}
+
+    .main_img {display: none;}
+
+
+}
+
+
+@media only screen and (max-width: 800px) {
+    
+    /*header*/
+
+    .hamburger-inner::before, .hamburger-inner::after, .hamburger-inner {background: #fff !important;}
+    .hamburger_con {display: block;}
+
+    /*navigation*/
+    #nav_area {display: none; background: #fecca9; position: absolute; width: 100%; z-index: 1; }
+    .nav_con {text-align: left;}
+    .nav_con > li {display: block; position: relative; margin:  0; padding: 10px 0; border-top: 1px solid #fff;}
+    .nav_con > li > a {display: block; padding:  5px; color: #000; }
+    .nav_con > li:last-child {border-bottom:  1px solid #fff;}
+    .nav_con > li.current_page_item, .nav_con > li:hover {background: rgb(254, 204, 169);}
+    .nav_con > li.current_page_item, .nav_con > li > a:hover {text-decoration: none;}
+
+    /* banner */
+    .w3-content {width:  140%; margin-left: 50% !important; transform: translateX(-50%) !important;}
+
+    /*Footer*/
+    .footer_nav_con {display: none;}
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .mid_boxes section {width: 100%; margin: 15px auto;}
+}
+
+
+@media only screen and (max-width: 414px) {
+    .main_logo {max-width: 43%;}
+    .copyright span {display: block;}
+    .copyright .separator {display: none;}
+}
+
+
+@media only screen and (max-width: 360px) {
+
+}

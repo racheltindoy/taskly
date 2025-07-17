@@ -1,0 +1,14 @@
+#main_area {background:  #fff; padding: 40px 25px;}
+.main_con {min-height: 400px; padding: 0; display: block;}
+main {width:  100%;}
+.main_img {display: none;}
+
+/*banner*/
+.w3-content {display: none;}
+
+#banner {text-align: center;}
+#banner img {height: auto !important; margin: 0 auto; }
+
+@media only screen and (max-width: 600px) {
+    #site-header {width:  155%; margin-left: 50%; transform: translateX(-50%);}
+}
