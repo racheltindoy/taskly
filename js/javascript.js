@@ -1,9 +1,10 @@
 const taskInput = document.querySelector('#input_text');
 const addTaskButton = document.querySelector('#add');
 const taskList = document.querySelector('#list ul');
+taskInput.focus();
 
 addTaskButton.addEventListener('click', () => {
-
+	taskInput.focus();
 	if(taskInput.value == '') { return alert('Task is empty!'); }
 
     const taskItem = document.createElement('li');

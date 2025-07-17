@@ -69,7 +69,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .mid_boxes section {width: 100%; margin: 15px auto;}
+    #middle{width: 100%; }
 }
 
 
