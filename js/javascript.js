@@ -1,19 +1,21 @@
-const input = document.querySelector('#input_text');
-const addBtn = document.querySelector('#add');
-const list = document.querySelector('#list ul');
+const taskInput = document.querySelector('#input_text');
+const addTaskButton = document.querySelector('#add');
+const taskList = document.querySelector('#list ul');
 
+addTaskButton.addEventListener('click', () => {
 
-addBtn.addEventListener('click', () => {
-	let li = document.createElement('li');
-	let checkBox = document.createElement('input');
-	checkBox.type = 'checkbox';
-	checkBox.classList = 'checkBox';
-	let liText = document.createTextNode(input.value);
+	if(taskInput.value == '') { return alert('Task is empty!'); }
 
-	
-	li.appendChild(checkBox);
-	li.appendChild(liText);
+    const taskItem = document.createElement('li');
+    const taskCheckbox = document.createElement('input');
+    taskCheckbox.type = 'checkbox';
+    taskCheckbox.classList = 'task-checkbox';
+    
+    const taskText = document.createTextNode(taskInput.value);
 
-	list.appendChild(li);
-	input.value = '';
+    taskItem.appendChild(taskCheckbox);
+    taskItem.appendChild(taskText);
+
+    taskList.appendChild(taskItem);
+    taskInput.value = '';
 });
