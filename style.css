@@ -88,5 +88,8 @@ button:hover {background: rgb(71 70 69); color: #fff;}
 
 #list {margin-top: 20px; font-size: 26px; line-height: 150%; height: 400px; overflow-y: auto; overflow-x: auto;}
 	
-#list ul li {margin-top: 15px; display: flex; align-items: center; padding-bottom: 10px; border-bottom: 1px solid rgb(243, 238, 227);
+#list ul li {margin-top: 15px; display: flex; align-items: center; padding-bottom: 10px; border-bottom: 1px solid rgb(243, 238, 227); display: flex; justify-content: space-between;
 }	
+
+li span {display: block;}
+li .trash:hover {cursor: pointer;}

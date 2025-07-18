@@ -14,6 +14,22 @@ let setCheckboxArray = () => {
 };
 
 
+let crossOut = () => {
+    let listCheckboxes = document.querySelectorAll('.task-checkbox');
+
+    listCheckboxes.forEach(listCheckbox => {
+
+        listCheckbox.addEventListener('change', () => {
+            if(listCheckbox.checked) {
+                listCheckbox.parentElement.style.textDecoration = 'line-through';
+            } else {
+                listCheckbox.parentElement.style.textDecoration = 'none';
+            }
+        })
+
+    });
+}
+
 
 addTaskButton.addEventListener('click', () => {
 	taskInput.focus();
@@ -33,9 +49,8 @@ addTaskButton.addEventListener('click', () => {
     taskInput.value = '';
 
     setCheckboxArray();
+    crossOut();
+   
 });
 
-
-
-
-
+ crossOut();
