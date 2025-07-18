@@ -3,6 +3,18 @@ const addTaskButton = document.querySelector('#add');
 const taskList = document.querySelector('#list ul');
 taskInput.focus();
 
+
+let setCheckboxArray = () => {
+    let listCheckboxes = document.querySelectorAll('.task-checkbox');
+    let arrListCheckboxes = Array.from(listCheckboxes);
+
+    arrListCheckboxes.map((listCheckbox, id) => {
+        listCheckbox.setAttribute("id", id);
+    });
+};
+
+
+
 addTaskButton.addEventListener('click', () => {
 	taskInput.focus();
 	if(taskInput.value == '') { return alert('Task is empty!'); }
@@ -19,4 +31,11 @@ addTaskButton.addEventListener('click', () => {
 
     taskList.appendChild(taskItem);
     taskInput.value = '';
+
+    setCheckboxArray();
 });
+
+
+
+
+
